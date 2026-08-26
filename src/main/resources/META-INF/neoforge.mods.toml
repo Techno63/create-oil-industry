@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All rights reserved"
+issueTrackerURL = "https://github.com/yourusername/create-oil-industry/issues"
+
+[[mods]]
+modId = "oilindustry"
+version = "1.0.0"
+displayName = "Create: Oil Industry"
+authors = "julian"
+description = '''
+An addon for Create.
+'''
+
+[[dependencies.oilindustry]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.oilindustry]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.oilindustry]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
