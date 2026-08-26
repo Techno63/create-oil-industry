@@ -18,7 +18,7 @@ public class OilIndustry {
     public static final Registrate REGISTRATE = Registrate.create(MODID);
 
     public OilIndustry(IEventBus modEventBus, ModContainer modContainer) {
-        //REGISTRATE.registerEventListeners(modEventBus);
+        REGISTRATE.registerEventListeners(modEventBus);
 
         ModItems.init();
     }
