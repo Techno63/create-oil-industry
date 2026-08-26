@@ -2,9 +2,8 @@ package com.julian.oilindustry;
 
 import com.julian.oilindustry.items.ModItems;
 import com.mojang.logging.LogUtils;
-import com.tterrag.registrate.Registrate;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import org.slf4j.Logger;
 
@@ -15,11 +14,12 @@ public class OilIndustry {
 
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final Registrate REGISTRATE = Registrate.create(MODID);
+    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MODID);
 
-    public OilIndustry(IEventBus modEventBus, ModContainer modContainer) {
+    public OilIndustry(IEventBus modEventBus) {
         REGISTRATE.registerEventListeners(modEventBus);
 
         ModItems.init();
+
     }
 }
